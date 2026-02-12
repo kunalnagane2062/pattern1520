@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Very Important Question... ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="fade">
+
+<!-- Romantic Background Effects -->
+<div class="romantic-bg">
+    <div class="floating-hearts"></div>
+    <div class="sparkles"></div>
+    <div class="gradient-overlay"></div>
+</div>
+
+<div class="music-btn" onclick="toggleMusic()">
+    <span class="music-icon">🎵</span>
+</div>
+
+<div class="valentine-question-container">
+    <div class="question-card">
+        <div class="animated-heart">💝</div>
+        
+        <h1 class="question-title">A Very Important Question...</h1>
+        
+        <div class="question-box">
+            <p class="the-question">Will You Be My Valentine?</p>
+            <p class="question-subtitle">Choose wisely... 😏</p>
+        </div>
+
+        <div class="button-container">
+            <button class="yes-btn" id="yesBtn" onclick="handleYes()">
+                Yes! 💕
+            </button>
+            <button class="no-btn" id="noBtn" onmouseover="handleNoHover()" onclick="handleNoClick()">
+                <span id="noBtnText">No</span>
+            </button>
+        </div>
+
+        <div class="hint-text" id="hintText"></div>
+    </div>
+
+    <!-- Celebration overlay (hidden initially) -->
+    <div class="celebration-overlay" id="celebrationOverlay">
+        <div class="celebration-content">
+            <div class="celebration-hearts">
+                💗💕💖💝💓💞💘
+            </div>
+            <h2 class="celebration-title">I KNEW IT! 🎉</h2>
+            <p class="celebration-message">You've made me the happiest person alive! 💕</p>
+            <p class="celebration-subtext">Now let me show you all the reasons why I love you...</p>
+            <button class="celebration-btn" onclick="nextPage('moments.html')">
+                Continue to Our Story →
+            </button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="valentine-question.js"></script>
+</body>
+</html>

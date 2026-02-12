@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="fade">
+
+<!-- Romantic Background Effects -->
+<div class="romantic-bg">
+    <div class="floating-hearts"></div>
+    <div class="sparkles"></div>
+    <div class="gradient-overlay"></div>
+</div>
+
+<div class="music-btn" onclick="toggleMusic()">
+    <span class="music-icon">🎵</span>
+</div>
+
+<div class="moment-detail-container">
+    <div class="moment-detail-card">
+        <div class="moment-detail-icon" id="momentIcon"></div>
+        <h2 class="moment-detail-title" id="momentTitle"></h2>
+        
+        <div class="moment-photo-frame">
+            <div class="photo-frame-inner">
+                <img id="momentPhoto" class="moment-photo" alt="Our Memory">
+                <div class="photo-shine"></div>
+            </div>
+        </div>
+
+        <div class="moment-detail-story" id="momentStory"></div>
+        
+        <!-- <div class="moment-detail-quote" id="momentQuote"></div> -->
+    </div>
+
+    <button class="main-btn nav-btn" onclick="goBack()">
+        <span class="btn-arrow">←</span>
+        <span>Back to Moments</span>
+    </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
